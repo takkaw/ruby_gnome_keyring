@@ -1,0 +1,13 @@
+= Ruby extension library to access Gnome Keyring
+
+== install
+- $ ruby extconf.rb
+- $ make 
+- $ make install
+== usage
+- require 'gnome_keyring'
+- # set example
+- GNOME_KEYRING["MyApplication@config"] = "test config data"
+- # get example
+- puts GNOME_KEYRING["MyApplication@config"] # => "test config data"
+
